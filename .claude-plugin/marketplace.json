@@ -1,0 +1,42 @@
+{
+  "name": "erp-accounting-iran",
+  "owner": {
+    "name": "schoolixstationary-tech"
+  },
+  "metadata": {
+    "description": "ERPNext + Iranian accounting skills",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "frappe-erpnext-skills",
+      "description": "60 skills for Frappe/ERPNext",
+      "source": {
+        "source": "github",
+        "repo": "schoolixstationary-tech/Frappe_Claude_Skill_Package"
+      },
+      "strict": false,
+      "skills": ["./skills/source"]
+    },
+    {
+      "name": "iran-accounting-standards",
+      "description": "Iranian accounting standards",
+      "source": {
+        "source": "github",
+        "repo": "schoolixstationary-tech/accounting-iran-standards"
+      },
+      "strict": false,
+      "skills": ["./"]
+    },
+    {
+      "name": "erpnext-reference",
+      "description": "Frappe/ERPNext v15 API reference",
+      "source": {
+        "source": "github",
+        "repo": "schoolixstationary-tech/erpnext-skill"
+      },
+      "strict": false,
+      "skills": ["./"]
+    }
+  ]
+}
